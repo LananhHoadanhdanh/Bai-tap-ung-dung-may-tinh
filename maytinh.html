@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng dụng máy tính</title>
+    <style>
+
+    </style>
+</head>
+<body>
+<table style="width: 400px">
+    <tr>
+        <td colspan="2" ><input type="text" id="sodau"></td>
+        <td colspan="2" ><input type="text" id="socuoi"></td>
+    </tr>
+    <tr>
+        <td><button onclick="cong()">Adition(+)</button></td>
+        <td><button onclick="tru()">Subtraction(-)</button></td>
+        <td><button onclick="nhan()">Multiplication(*)</button></td>
+        <td><button onclick="chia()">Division(/)</button></td>
+    </tr>
+    <tr>
+        <td colspan="2">Result Division:</td>
+        <td id="result"></td>
+    </tr>
+</table>
+</body>
+</html>
+<script>
+function cong() {
+    let a = document.getElementById("sodau").value;
+    let b = document.getElementById("socuoi").value;
+    let m = a+b;
+    document.getElementById("result").innerHTML = m;
+}
+function tru() {
+    let a = document.getElementById("sodau").value;
+    let b = document.getElementById("socuoi").value;
+    let n = a-b;
+    document.getElementById("result").innerHTML = n;
+}
+function nhan() {
+    let a = document.getElementById("sodau").value;
+    let b = document.getElementById("socuoi").value;
+    let p = a*b;
+    document.getElementById("result").innerHTML = p;
+}
+function chia() {
+    let a = document.getElementById("sodau").value;
+    let b = document.getElementById("socuoi").value;
+    let q = a/b;
+    document.getElementById("result").innerHTML = q;
+}
+</script>
